@@ -1,7 +1,11 @@
-.kirmizi{
-    color: red;
-    text-align: right;
-    background-color: aquamarine;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{box-sizing: border-box;}
+
+body{
+    font-family: 'Montserrat', sans-serif;;
+    padding: 20px;
+    font-size: 20px;
 }
 
 a{
@@ -9,12 +13,113 @@ a{
     font-weight: 500;
 }
 
-.kutu{
-
-    width: 300px;
-    height: 500px;
-    background-color: rgb(255, 230, 0);
-    border:10px dotted rgb(51, 0, 255);
-    border-radius: 20px;
-    box-shadow: 5px 5px 7px red;
+input,textarea {
+                border:1px rgb(151, 113, 113);
+                border-radius: 10px;
+                padding: 10px;
+                background-color:rgb(164, 164, 164) ;
 }
+
+button{
+    border:1px rgb(151, 113, 113);
+    border-radius: 10px;
+    padding: 10px 30px;
+    background-color:rgb(151, 113, 113) ;
+    color: white;
+    font-size: 20px;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between ;
+    background-color:rgb(151, 113, 113) ;
+    padding: 10px 30px;
+   /* border-radius: 60px; */
+}
+
+.header .title {
+    display: flex;
+    align-items: center;
+    margin: 10px ;
+   gap: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.content .about{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+.content .about img {
+    width: 400px;
+    height:525px;
+    border-radius: 250px; 
+   
+}
+
+.content .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.content .toolbar{
+    display: flex;
+    gap: 20px;
+}
+
+.content .toolbar a{
+    background-color: rgb(151, 113, 113);
+    width: 100x;
+    height: 100px;
+   font-size: 20px;
+    border-radius: 50px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    font-weight: 700;
+    box-shadow: 3px 3px 5px rgb(54, 41, 41);
+}
+
+.section{
+    width: 60%;}
+
+    .section .card{
+        display: flex;
+        border: 1px solid rgb(151, 113, 113);
+        border-radius: 20px;
+        padding: 50px;
+        margin-bottom: 50px;
+        gap: 40px;
+        box-shadow: 3px 3px 8px rgb(54, 41, 41);
+    }
+    
+    .section .card h2{
+        color: rgb(151, 113, 113);
+    }
+    
+    .section .card .left{
+        flex: 3;
+    }
+    
+    .section .card .right{
+        flex: 2;
+    }
+    
+    .section .form-row{
+        margin-bottom: 20px;
+    }
+    
+    .footer{
+        display: flex;
+        justify-content: space-around;
+        border-top: 1px dotted gray;
+    }
